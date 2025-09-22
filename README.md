@@ -77,15 +77,30 @@ df = pd.read_csv('./data/listings.csv.gz', compression='gzip')
     - df.isnull().sum(), df.boxplot() 등의 함수를 활용한다.
     
 **4. 데이터 시각화를 통한 탐색**
-    - 분석1: 각 특성 컬럼과 price 컬럼의 상관관계 도출을 위한 시각화
-        - 수치형 칼럼과 price 칼럼
+
+    1) 각 특성 컬럼과 가격 컬럼의 상관관계 도출을 위한 시각화
+        - 수치형 칼럼과 가격 칼럼
         <img width="1990" height="1990" alt="image" src="https://github.com/user-attachments/assets/f98a4fe1-aeb5-442e-9017-65d8b2f1ef10" />
             - 수치형 컬럼의 산점도를 봤을 때는 상관관계를 파악하기 어려우나, 선형회귀선을 보면 선형관계를 도출할 수 있음
             - 많은 수용가능인원, 많은 화장실 개수, 많은 침실 개수, 많은 침대 개수, 많은 1년 내의 리뷰 개수, 높은 평점이 높은 가격과 선형관계가 있는 것으로 보아 일반적 통념에 부합
         - 지역별 가격 관계 시각화
         <img width="1118" height="703" alt="image" src="https://github.com/user-attachments/assets/50cd5dfb-d798-486d-b3eb-40344162ea25" />
-        - 
+        <img width="1082" height="703" alt="image" src="https://github.com/user-attachments/assets/f9b4388d-ddda-4313-81a1-618ba21c9d5d" />
 
+    2) 리뷰 평점 관련 칼럼 간 heatmap 도출
+        <img width="939" height="709" alt="image" src="https://github.com/user-attachments/assets/dad157a6-bea1-4a60-a27d-5b71c0114cc2" />
+
+    3) 숙소 위치별 가격 관찰
+        <img width="974" height="697" alt="image" src="https://github.com/user-attachments/assets/3ad0af07-f3ef-4598-970d-dc1060a63662" />
+
+    4) 리뷰
+
+    5) amenities - 숙소 편의시설 칼럼
+        1. 편의시설 개수별 가격 평균
+        <img width="1619" height="523" alt="image" src="https://github.com/user-attachments/assets/870ee7e2-93f7-437c-97cd-c9148fbc30a2" />
+
+
+    
     - 데이터를 시각화하여 변수 간의 관계, 분포 등을 파악한다.
     - 히스토그램, 박스플롯, 상관관계 행렬 등 다양한 그래프를 통해 데이터의 특성을 시각적으로 확인한다.
     - sns.countplot(), sns.heatmap() 등의 함수를 사용한다.
