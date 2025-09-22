@@ -9,11 +9,6 @@ EDA / ML mini project 5Team
 | git |        | pdyeon999 |          |          |
 
 
-| 이름 | 역할 | 담당 업무 |
-|------|------|-----------|
-| 김지민 | 팀장 | 기획, 프론트엔드 |
-| 이준호 | 팀원 | 백엔드, 배포 |
-| 박하늘 | 팀원 | AI 모델, 데이터 수집 |
 
 ### 2. 프로젝트 개요
 - 프로젝트 명: 도쿄 여행객들을 위한 숙소값 예측
@@ -25,13 +20,13 @@ EDA / ML mini project 5Team
 
 
 ### 3. 기술 스택
-| 분야 |	기술 |	비고 |
-|------|---------|-------|
-|언어 |  Python 3.12 |       |
-|개발 환경|	Jupyter Notebook|   |
-|데이터 처리|	Pandas, NumPy|	|
-|시각화|	Matplotlib (pyplot), Seaborn| |
-|버전 관리	Git, GitHub	협업 ||
+| 분야 |	기술 |
+|------|---------|
+|언어 |  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 3.12 |
+|개발 환경|	Jupyter Notebook| 
+|데이터 처리|	Pandas, NumPy|
+|시각화|	Matplotlib (pyplot), Seaborn|
+|버전 관리|<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> |
 
 ### 4. WBS
 
