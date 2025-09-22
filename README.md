@@ -25,9 +25,9 @@ EDA / ML mini project 5Team
 
 
 ### 📑 데이터셋
-파일명: `tokyo_listings.csv.gz`
-주요 칼럼: 숙소별 room type, 침실 개수, 1박당 가격 등
-데이터 출처: [Airbnb](https://insideairbnb.com/)
+- 파일명: `tokyo_listings.csv.gz`
+- 주요 칼럼: 숙소별 room type, 침실 개수, 1박당 가격 등
+- 데이터 출처: [Airbnb](https://insideairbnb.com/)
 
 
 ### 6. EDA
