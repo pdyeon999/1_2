@@ -78,26 +78,40 @@ df = pd.read_csv('./data/listings.csv.gz', compression='gzip')
     
 **4. 데이터 시각화를 통한 탐색**
 
-    1) 각 특성 컬럼과 가격 컬럼의 상관관계 도출을 위한 시각화
-        - 수치형 칼럼과 가격 칼럼
+    1-1) 각 특성 컬럼과 가격 컬럼의 상관관계 도출을 위한 시각화
 <img width="1990" height="1990" alt="image" src="https://github.com/user-attachments/assets/f98a4fe1-aeb5-442e-9017-65d8b2f1ef10" />
         - 수치형 컬럼의 산점도를 봤을 때는 상관관계를 파악하기 어려우나, 선형회귀선을 보면 선형관계를 도출할 수 있음
         - 많은 수용가능인원, 많은 화장실 개수, 많은 침실 개수, 많은 침대 개수, 많은 1년 내의 리뷰 개수, 높은 평점이 높은 가격과 선형관계가 있는 것으로 보아 일반적 통념에 부합
-        - 지역별 가격 관계 시각화
-<img width="1118" height="703" alt="image" src="https://github.com/user-attachments/assets/50cd5dfb-d798-486d-b3eb-40344162ea25" />
-<img width="1082" height="703" alt="image" src="https://github.com/user-attachments/assets/f9b4388d-ddda-4313-81a1-618ba21c9d5d" />
+    
+    1-2) 지역별 가격 관계 시각화
+<img width="1790" height="790" alt="image" src="https://github.com/user-attachments/assets/908d9c70-ea96-4176-94aa-ff34eee18ebb" />
+
+    1-3) 룸 타입별 가격 관계 시각화
+<img width="1790" height="790" alt="image" src="https://github.com/user-attachments/assets/41741568-f418-45c1-a7bc-52e83ed4674d" />
+
+```
+- 수치형 컬럼
+  - 수치형 컬럼의 산점도를 봤을 때는 상관관계를 파악하기 어려우나, 선형회귀선을 보면 선형관계를 도출할 수 있음
+  - 많은 수용가능인원, 많은 화장실 개수, 많은 침실 개수, 많은 침대 개수, 많은 1년 내의 리뷰 개수, 높은 평점이 높은 가격과 선형관계가 있는 것으로 보아 일반적 통념에 부합
+   
+- 범주형 컬럼
+  - 범주형 컬럼은 범주값이 많아 price를 x축으로 설정 및 수평형 박스플롯을 그린 후, 중위값 상위 순서대로 정렬
+  - 중위값과 평균값 비교를 위해 평균값도 빨간점으로 표기
+  - 선호되는 특정 지역의 가격이 높은 것을 확인할 수 있었음
+  - 단순히 특정 룸만 대여하는 것보다 전체를 대여하는 것이 가격이 높음을 확인할 수 있으며, 룸을 공유하는 것이 가격이 가장 낮은 것으로 보아 일반적 통념에 부합함
+```
 
     2) 리뷰 평점 관련 칼럼 간 heatmap 도출
-        <img width="939" height="709" alt="image" src="https://github.com/user-attachments/assets/dad157a6-bea1-4a60-a27d-5b71c0114cc2" />
+<img width="939" height="709" alt="image" src="https://github.com/user-attachments/assets/dad157a6-bea1-4a60-a27d-5b71c0114cc2" />
 
     3) 숙소 위치별 가격 관찰
-        <img width="974" height="697" alt="image" src="https://github.com/user-attachments/assets/3ad0af07-f3ef-4598-970d-dc1060a63662" />
+<img width="974" height="697" alt="image" src="https://github.com/user-attachments/assets/3ad0af07-f3ef-4598-970d-dc1060a63662" />
 
     4) 리뷰
 
     5) amenities - 숙소 편의시설 칼럼
         1. 편의시설 개수별 가격 평균
-        <img width="1619" height="523" alt="image" src="https://github.com/user-attachments/assets/870ee7e2-93f7-437c-97cd-c9148fbc30a2" />
+<img width="1619" height="523" alt="image" src="https://github.com/user-attachments/assets/870ee7e2-93f7-437c-97cd-c9148fbc30a2" />
 
 
     
