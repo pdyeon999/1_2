@@ -22,7 +22,7 @@ EDA / ML mini project 5Team
 ### 3. 기술 스택
 | 분야 |	기술 |
 |------|---------|
-|언어 |  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 3.12 |
+|언어 |  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">=3.12 |
 |개발 환경|	Jupyter Notebook| 
 |데이터 처리|	Pandas, NumPy|
 |시각화|	Matplotlib (pyplot), Seaborn|
