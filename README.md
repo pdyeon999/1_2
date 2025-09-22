@@ -115,7 +115,10 @@ df = pd.read_csv('./data/listings.csv.gz', compression='gzip')
     
     
 **5. 데이터 정제 및 전처리**
-    1. review_scores_rating 제외 평점 관련 칼럼 모두 제거
-    2. 위도, 경도 칼럼 제거
-    3. 범주형 데이터 라벨 인코딩
-    <img width="784" height="658" alt="image" src="https://github.com/user-attachments/assets/07267193-8b0b-4d6e-b629-c1eb0780140d" />
+    
+    1) review_scores_rating 제외 평점 관련 칼럼 모두 제거
+    
+    2) 위도, 경도 칼럼 제거
+    
+    3) 범주형 데이터 라벨 인코딩
+<img width="784" height="658" alt="image" src="https://github.com/user-attachments/assets/07267193-8b0b-4d6e-b629-c1eb0780140d" />
