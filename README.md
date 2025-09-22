@@ -108,8 +108,12 @@ df = pd.read_csv('./data/listings.csv.gz', compression='gzip')
     4) 리뷰
 
     5) amenities - 숙소 편의시설 칼럼
-        1. 편의시설 개수별 가격 평균
+        
+        1) 편의시설 개수별 가격 평균
 <img width="1619" height="523" alt="image" src="https://github.com/user-attachments/assets/870ee7e2-93f7-437c-97cd-c9148fbc30a2" />
+
+        2) 카테고리화 이후 가격 평균
+<img width="1619" height="544" alt="image" src="https://github.com/user-attachments/assets/97e22fb9-b58b-46f4-acfb-31dcc8bdedaa" />
 
 
     
