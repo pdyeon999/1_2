@@ -11,10 +11,9 @@ EDA / ML mini project 5Team
 
 
 ### 2. 프로젝트 개요
-- 프로젝트 명: 도쿄 여행객들을 위한 숙소값 예측
+- 프로젝트 명: 도쿄 예비 여행객들을 위한 숙소값 예측
 - 프로젝트 소개: 에어비앤비에서 제공하는 도쿄 숙소 리스트를 기반으로 숙소 조건과 가격의 관계를 분석함
 - 프로젝트 목표: 숙소 조건과 가격의 유의미한 관계를 포착하고, 나아가 조건별 숙소값을 예측
-
 
 - 에어비앤비에서 제공하는 데이터셋 분석으로 예약 가능 여부와 상관없이 숙소의 조건에 따른 가격 예측 가능
 
@@ -22,13 +21,23 @@ EDA / ML mini project 5Team
 ### 3. 기술 스택
 | 분야 |	기술 |
 |------|---------|
-|언어 |  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">=3.12 |
+|언어 |  python 3.12|
 |개발 환경|	Jupyter Notebook| 
-|데이터 처리|	Pandas, NumPy|
+|데이터 처리|	Pandas, #013243|
 |시각화|	Matplotlib (pyplot), Seaborn|
-|버전 관리|<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> |
+|버전 관리|github|
+
 
 ### 4. WBS
+|분류|상세업무|산출물|시작일|종료일|
+|---|---|---|---|---|
+|기획|1-1. 데이터셋 탐색 ||09.15|09.16|
+|기획|1-2. 주제 선정 ||09.16|09.16|
+|EDA|2-1. 데이터 구조 및 기초 통계 확인 ||09.16|09.18|
+|EDA|2-2. 결측치 및 이상치 탐색 ||09.16|09.18|
+|EDA|2-3. 시각화를 통한 컬럼별 탐색 ||09.16|09.18|
+|EDA|2-4. 컬럼 선정 ||09.18|09.18|
+|EDA|2-5. 데이터 정제 및 전처리 ||09.18|09.20|
 
 
 ### 📑 데이터셋
@@ -47,13 +56,21 @@ EDA / ML mini project 5Team
 ```
 df = pd.read_csv('./data/listings.csv.gz', compression='gzip')
 ```
+
 **2. 데이터 구조 및 기초 통계 확인**
+    - 불필요한 칼럼 1차 제거
+
     - 데이터의 구조를 파악하기 위해 컬럼 정보와 데이터 타입을 확인한다.
     - 데이터의 기본 통계 정보를 출력하여 각 변수의 분포와 특성을 살펴본다.
     - df.head(), df.tail(), df.info(), df.describe() 등의 함수를 사용한다.
-
+    
     
 **3. 결측치 및 이상치 탐색**
+    1. 숙소 조건 칼럼(bathrooms, bedrooms, beds) 결측치 처리
+    1-1. 숙소 조건 칼럼 이상치 처리
+    2. price 결측치 처리
+    2-1. price 이상치 처리
+    3. 
     - 결측치(NaN) 값이 존재하는지 확인하고, 이를 처리하는 방법을 결정한다.
     - 데이터에 존재하는 이상치(Outlier)를 탐지하고, 이를 어떻게 처리할지 결정한다.
     - df.isnull().sum(), df.boxplot() 등의 함수를 활용한다.
@@ -64,3 +81,6 @@ df = pd.read_csv('./data/listings.csv.gz', compression='gzip')
     - sns.countplot(), sns.heatmap() 등의 함수를 사용한다.
     
 **5. 데이터 정제 및 전처리**
+    - 필요 없는 변수나 중복 데이터를 제거한다. (3번에서 같이 해줘도 됨)
+    - 범주형 데이터를 처리하거나, 스케일링 및 정규화를 통해 모델에 적합한 형태로 데이터를 변환한다.
+    - df.drop(), df.fillna(), pd.get_dummies() 등의 함수를 활용한다.
